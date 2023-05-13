@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+text-align: center;
+font-family: cursive;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        body{
+           
+            background-image:url(https://th.bing.com/th/id/OIP.wWfLAmQT7K9xysYwaFNKLAHaE8?w=277&h=184&c=7&r=0&o=5&pid=1.7) ;
+        
+        }
+        header{
+            height: auto;
+            width: 100%;
+            background-color: powderblue;
+        }
+        table{
+        width: 300px; 
+        height: 150px;
+        float: left;
+        border: solid;
+        border-collapse: collapse;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-left: 35%;
+    }
+    td,th{
+        border: 20px;
+        text-align: center;
+    }
+    table, th, td {
+  border: 1px solid black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+
+    }
+    p{
+        font-size: 20px;
+    }
+    h1,h2,h3,p{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    ol,ul{
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+       
+    }
+    nav{
+        font-size: large;
+       
+    }
+   a{
+    margin-left: 50px;
+   }
+   form{
+        width: 700px; 
+        height: 1100px;
+        float: left;
+        border: solid;
+        border-collapse: collapse;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+margin-left: 35%;
+background-color: powderblue;
+
+    }
+    h2{
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dog Talks</h1>
+        <br>
+    </header>
+        <nav>
+            <a href="index.html">Home </a>
+                <a href="breeds.html">Breeds of diffrent Dogs</a>
+               <a href="howToPurchase.html">How to Purchase a Dog</a>
+               <a href="food.html">Food a Dog can Eat</a>
+                <a href="poAndCons.html"> Pros and Cons of having Dogs</a>
+                <a href="contactUs.html">Contact Us</a>
+                <a href="facts.html">Facts about Dogs</a>
+            </nav>
+        <br>
+
+<br>
+<div>
+      <form >
+        <h2> Fill this Form to Contact Us</h2>
+        First Name<br>
+        <input type="text" required>
+        <br><br>
+        Last name<br>
+        <input type="text" required>
+        <br><br>
+        <fieldset>
+            <legend>
+                Country<br>
+            </legend>
+            <label for="Australia">Australia </label>
+            <input type="radio" name="Country" id="Australia">
+            <label for="China">China</label>
+            <input type="radio" name="Country" id="China">
+            <label for="US">US</label>
+            <input type="radio" name="Country" id="US">
+            <label for="USA">USA</label>
+            <input type="radio" name="Country" id="USA">
+            <label for="India">India</label>
+            <input type="radio" name="Country" id="India">
+            <label for="other">Other</label>
+            <input type="radio" name="Country" id="Other">
+
+        </fieldset>
+        Email<br>
+        <input type="email" required>
+        <br>
+        <br>
+        Phone No.<br>
+        <input type="number"required >
+        <br>
+        <br>
+        Message<br>
+        <textarea style="height: 170px; width: 300px;" type="text" value="Write something.." required> </textarea>
+        <br>
+        <br>
+
+ <p style="color: rgb(248, 0, 0);"> Enter the Captcha as shown below</p>
+        <img style="height: 150px; width: 150px;" src="https://i.ytimg.com/vi/KQkTsk1Nbhk/hq2.jpg">
+        <br>
+        <br>
+        <input id="sunidhi" type="text" required>
+        <br><br>
+        <p id="success"></p>
+ 
+        <input  onclick="validation()" style="background-color: rgb(6, 253, 6); height: 40px; width: 100px; font-size: 20px;" type="submit" value="Submit">
+    </form>
+</div>
+    <script>
+function validation(){
+    let ac="fghij"
+    let uc=document.getElementById("sunidhi").value;
+    if(ac==uc){
+        document.getElementById("success").innerText= "Your request has been submitted"
+    }
+    else{
+        document.getElementById("success").innerText="this capchta is invalid"
+    }
+}
+    </script>
+
+     
+</body>
+</html>
+
+
+    
+    
